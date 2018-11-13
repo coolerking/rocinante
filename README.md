@@ -11,7 +11,9 @@
   * PCA9685 Survo Controller
 
 * donkeycar v 2.5.8
+ * donkeyparts
  * TensorFlow v 1.7.0
+
 
 ## セットアップ
 
