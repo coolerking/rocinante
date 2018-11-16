@@ -48,9 +48,9 @@ def drive(cfg, model_path=None, use_joystick=False, use_chaos=False):
         ## PS3 Dualshock2
         ##from donkeypart_ps3_controller import JoystickController
         ## Logicool F710
-        from parts.controller_logicool import JoystickController
+        ##from parts.controller_logicool import JoystickController
         ## Elecom JC-U3912TBK
-        ##from parts.controller_elecom_bt import JoystickController
+        from parts.controller_elecom_bt import JoystickController
         ctr = JoystickController(max_throttle=cfg.JOYSTICK_MAX_THROTTLE,
                                  steering_scale=cfg.JOYSTICK_STEERING_SCALE,
                                  throttle_axis=cfg.JOYSTICK_THROTTLE_AXIS,
