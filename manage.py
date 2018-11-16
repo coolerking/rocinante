@@ -45,9 +45,12 @@ def drive(cfg, model_path=None, use_joystick=False, use_chaos=False):
     V.add(cam, outputs=['cam/image_array'], threaded=True)
 
     if use_joystick or cfg.USE_JOYSTICK_AS_DEFAULT:
-        from donkeypart_ps3_controller import JoystickController
-        # only work on pi/unix
-        #from parts.controller_logicool import JoystickController
+        ## PS3 Dualshock2
+        ##from donkeypart_ps3_controller import JoystickController
+        ## Logicool F710
+        from parts.controller_logicool import JoystickController
+        ## Elecom JC-U3912TBK
+        ##from parts.controller_elecom_bt import JoystickController
         ctr = JoystickController(max_throttle=cfg.JOYSTICK_MAX_THROTTLE,
                                  steering_scale=cfg.JOYSTICK_STEERING_SCALE,
                                  throttle_axis=cfg.JOYSTICK_THROTTLE_AXIS,
