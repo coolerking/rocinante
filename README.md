@@ -1,8 +1,10 @@
 # rocinante
 
+最初のDonkey Carアプリ用のリポジトリ。
+
 ![my first donkey car](./docs/mycar.jpg)
 
-最初のDonkey Carアプリ用のリポジトリ。
+
 
 ## 車両仕様
 
@@ -14,6 +16,9 @@
  * donkeyparts
  * TensorFlow v 1.7.0
 
+## 車両の制作
+
+* [写真で見る Donkey Carの組み立て](https://www.slideshare.net/HoriTasuku/donkey-car)
 
 ## セットアップ
 
@@ -27,8 +32,6 @@ git checkout master
 pip install -e .
 ```
 
-### PS3コントローラを利用する場合
 
-[このドキュメント](./docs/sixaxis_setup.md) を参考にセットアップを行ってください。
 
 
