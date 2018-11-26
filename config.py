@@ -1,10 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-CAR CONFIG
+Rocinante号固有の設定
 
-This file is read by your car application's manage.py script to change the car
-performance.
+各自車両の特性を定義するための初期設定ファイルである。
+このファイルは`manage.py`から読み込まれる。
+WARRIORシャーシは後進がないため、ここでは設定しているが動作しない。
 
-EXMAPLE
+例
 -----------
 import dk
 cfg = dk.load_config(config_path='~/mycar/config.py')
