@@ -1,0 +1,6 @@
+data/
+docs/
+parts/
+/check*py
+LICENSE
+.git

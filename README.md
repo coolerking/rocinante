@@ -143,7 +143,10 @@ SONY PlayStation4で使用している Dualshock4 コントローラを使用し
   Donkey Car の基本機能OSS、MITライセンス準拠です。2.5.1から2.5.8へ更新した際にpartsのリポジトリは分割されました。
 
 * GitHub [autorope/donkeypart_ps3_controller](https://github.com/autorope/donkeypart_ps3_controller)
-  PS3やPS4を使用しない場合でもF710やJC-U3912Tの各コントローラが基底クラスとして使用しています。
+  `old`ディレクトリ内のコントローラが基底クラスとして使用しています。
+
+* GitHub [autorope/donkeypart_bluetooth_game_controller](https://github.com/autorope/donkeypart_bluetooth_game_controller)
+  F710やJC-U3912Tの各コントローラが基底クラスとして使用しています。
 
 ## ライセンス
 

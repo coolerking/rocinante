@@ -74,19 +74,20 @@ def drive(cfg, model_path=None, use_joystick=False, use_chaos=False):
     #                             auto_record_on_throttle=cfg.AUTO_RECORD_ON_THROTTLE)
     # ジョイスティック part の生成
     if use_joystick or cfg.USE_JOYSTICK_AS_DEFAULT:
-        # F710用ジョイスティックコントローラを使用
-        #from parts.logicool import F710_JoystickController
-        #ctr = F710_JoystickController(
+
         # PS4 Dualshock4 ジョイスティックコントローラを使用
-        from donkeypart_ps3_controller.part import PS4JoystickController
-        ctr = PS4JoystickController(
+        #from donkeypart_ps3_controller.part import PS4JoystickController
+        #ctr = PS4JoystickController(
+        #                        throttle_scale=cfg.JOYSTICK_MAX_THROTTLE,
+        #                        steering_scale=cfg.JOYSTICK_STEERING_SCALE,
+        #                        # throttle_axis=cfg.JOYSTICK_THROTTLE_AXIS,
+        #                        auto_record_on_throttle=cfg.AUTO_RECORD_ON_THROTTLE)
         # ELECOM JC-U3912T ジョイスティックコントローラを使用
-        #from parts.elecom import JC_U3912T_JoystickController
-        #ctr = JC_U3912T_JoystickController(
-                                 throttle_scale=cfg.JOYSTICK_MAX_THROTTLE,
-                                 steering_scale=cfg.JOYSTICK_STEERING_SCALE,
-                                # throttle_axis=cfg.JOYSTICK_THROTTLE_AXIS,
-                                 auto_record_on_throttle=cfg.AUTO_RECORD_ON_THROTTLE)
+        # from elecom.jc_u3912t import JoystickController
+        # F710用ジョイスティックコントローラを使用
+        from logicool.f710 import JoystickController
+        ctr = JoystickController()
+
     else:
         # ステアリング、スロットル、モードなどを管理するWebサーバを作成する
         # Web Controller part の生成

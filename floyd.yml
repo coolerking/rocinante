@@ -1,0 +1,19 @@
+env: tensorflow-1.7
+
+task:
+  train:
+    machine: gpu2
+    description: train on 20181129 data with gpu2
+    input:
+      - source: hara2dev/datasets/emp_20181129/1
+        destination: data
+    command: pip install docopt && pip install donkeycar && python manage.py train --model /output/mypilot --tub /data
+
+  test_train:
+    machine: cpu
+    description: test train on 20181129 data with cpu
+    input:
+      - source: hara2dev/datasets/emp_20181129/1
+        destination: data
+    command: pip install docopt && pip install donkeycar && python manage.py train --model /output/mypilot --tub /data
+
