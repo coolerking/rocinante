@@ -4,3 +4,6 @@ parts/
 /check*py
 LICENSE
 .git
+floyd.yml
+.floydignore
+.floyd*
